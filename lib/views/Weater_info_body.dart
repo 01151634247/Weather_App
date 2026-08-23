@@ -1,0 +1,42 @@
+import 'package:flutter/material.dart';
+class WeaterinfoBody extends StatelessWidget {
+   WeaterinfoBody({super.key, });
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text('london',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 32),),
+           Text('Updated at 23:46 ',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
+         
+         Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+             Text('noooo',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
+        
+          ],
+      
+          
+         ),
+          Column(
+            children: 
+            [
+             Text('MaxTemp 24',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
+           Text('MainTemp 16 ',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
+      
+            ],
+            ),    
+            SizedBox(
+              height: 35,
+            ),
+      
+        Text('Ligh Rain ',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 32),),           
+        ],
+        
+       
+      ),
+    );
+  }
+}
