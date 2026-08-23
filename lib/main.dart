@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:weather_app/views/No_weather_View.dart';
+
+import 'package:weather_app/views/home_view.dart';
 
 
 void main() {
@@ -13,8 +14,9 @@ class WeatherApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      
      debugShowCheckedModeBanner: false,
-      home: NoweahterPage(),
+      home: HomeView(),
 
     );
   }
