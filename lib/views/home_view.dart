@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app/views/search_view.dart';
+import 'package:weather_app/widgets/No_weather_widget.dart';
 import 'package:weather_app/widgets/Weater_info_widget.dart';
 
 class HomeView extends StatelessWidget {
@@ -7,6 +8,7 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    
     return Scaffold(
        appBar:AppBar(
         actions: [
@@ -24,7 +26,7 @@ class HomeView extends StatelessWidget {
           color: Colors.white,
         ),),),
 
-      body: WeaterinfoBody(),
+      body:NoweahterPage(),
       
     );
   }

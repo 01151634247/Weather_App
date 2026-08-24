@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+
 class WeaterinfoBody extends StatelessWidget {
    WeaterinfoBody({super.key, });
+      
+      
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -9,7 +12,7 @@ class WeaterinfoBody extends StatelessWidget {
         
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text('london',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 32),),
+          Text('cairo',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 32),),
            Text('Updated at 23:46 ',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
             SizedBox(
               height: 10,
