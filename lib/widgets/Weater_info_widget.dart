@@ -14,7 +14,7 @@ class WeaterinfoBody extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(weatherModel.cityName,style: TextStyle(fontWeight: FontWeight.bold,fontSize: 32),),
-           Text('Updated at 23:46 ',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
+           Text('date',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
             SizedBox(
               height: 10,
             ),
@@ -24,14 +24,14 @@ class WeaterinfoBody extends StatelessWidget {
           children: [
            
 
-            Image.asset('assets/clear.png'),
-             Text('19',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
+            Image.network('https:${weatherModel.image}'),
+             Text(weatherModel.temp.toString(),style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
 
       Column(
             children: 
             [
-             Text('MaxTemp 24',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
-           Text('MainTemp 16 ',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
+             Text('MaxTemp${weatherModel.maxTemp.toString()}',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
+           Text('MinTemp${weatherModel.minTemp.toString()}',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
       
             ],
             ),  
@@ -45,7 +45,7 @@ class WeaterinfoBody extends StatelessWidget {
               height: 35,
             ),
       
-        Text('Ligh Rain ',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 32),),           
+        Text(weatherModel.weatherConditions,style: TextStyle(fontWeight: FontWeight.bold,fontSize: 32),),           
         ],
         
        
