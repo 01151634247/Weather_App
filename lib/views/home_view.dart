@@ -36,7 +36,11 @@ class HomeView extends StatelessWidget {
 
           );
           }  else if(state is WeatherSuccesState){
-            return WeaterinfoBody();
+               state.weatherModel;
+            return WeaterinfoBody(
+              weatherModel: state.weatherModel,
+              
+            );
           }else{
             return Text('Theree was an erro');
           }
