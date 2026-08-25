@@ -10,7 +10,7 @@ final String apiKey ='8791666b9d84494d9df232453262308';
 Future<WeatherModel> getCurnetWeather({required String cityNName})async{
 try {
   Response response = await dio.get('$baseUrl/forecast.json?key=$apiKey&q=$cityNName'); 
-  WeatherModel weatherModel =WeatherModel.fromJson(response.data);
+ WeatherModel weatherModel =WeatherModel.fromJson(response.data);
  return weatherModel;
 
 }on DioException catch (e) {
